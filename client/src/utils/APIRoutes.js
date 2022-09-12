@@ -1,4 +1,4 @@
-export const host = `http://localhost:${process.env.REACT_APP_PORT || 5000}`;
+export const host = `http://${window.location.hostname}:${process.env.REACT_APP_PORT || 5000}`;
 export const registerRoute = `${host}/api/auth/register`;
 export const loginRoute = `${host}/api/auth/login`;
 export const allUsersRoute = `${host}/api/auth/allusers`;
